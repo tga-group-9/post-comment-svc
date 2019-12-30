@@ -15,7 +15,8 @@ spec:
       containers:
       - name: post-container
         # image: anokhadocker/post:latest
-        image: post:latest
+        # image: post:latest
+        image: ${REPOSITORY_TAG}
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
